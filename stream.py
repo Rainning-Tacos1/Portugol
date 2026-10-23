@@ -26,3 +26,6 @@ class Stream:
         self.s.seek(c)  # Restore current stream position
 
         return None if r == "" else r
+
+    def reset_peek(self):
+        self.p = 0
